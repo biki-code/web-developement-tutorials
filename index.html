@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <script src="sync_async.js"></script> -->
+		<link rel="stylesheet" href="style.css">
+		<title>Document</title>
+
+	</head>
+	<body>
+		<!-- <div id="example"></div> -->
+		<img src="images/grapefruit-slice-332-332.jpg" alt="My test image" /><br>
+		<a
+			href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"
+			target="_blank"
+			>Hello</a
+		><br />
+		<a href="mailto:bikiltu.terfa@outlook.com">email</a><br />
+		<div><a href="tel:0449768258">Tel</a></div>
+
+		<table>
+			<thead>
+				<tr>
+					<th colspan="3">THE TABLE HEADER</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>First Line</td>
+					<td>Second Column</td>
+					<td>Third Column</td>
+				</tr>
+				<tr>
+					<td>First Line</td>
+					<td>Second Column</td>
+					<td>Third Column</td>
+				</tr>
+				<tr>
+					<td>First Line</td>
+					<td>Second Column</td>
+					<td>Third Column</td>
+				</tr>
+				<tr>
+					<td>First Line</td>
+					<td>Second Column</td>
+					<td>Third Column</td>
+				</tr>
+				<tr>
+					<td>First Line</td>
+					<td>Second Column</td>
+					<td>Third Column</td>
+				</tr>
+				<tr>
+					<td>First Line</td>
+					<td>Second Column</td>
+					<td>Third Column</td>
+				</tr>
+			<tr>
+					<td>First Line</td>
+					<td>Second Column</td>
+					<td>Third Column</td>
+				</tr>
+				<tr>
+					<td>First Line</td>
+					<td>Second Column</td>
+					<td>Third Column</td>
+				</tr>
+				<tr>
+					<td>First Line</td>
+					<td>Second Column</td>
+					<td>Third Column</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<style>
+			table,
+			td,
+			th {
+				border: 1px solid #333;
+			}
+		</style>
+
+		<ul>
+			<li>First</li>
+			<li>Second</li>
+		</ul>
+
+		<ol>
+			<li>Hello</li>
+			<li>Whatever</li>
+		</ol>
+		<form action="#" method="get">
+			<input type="text" />
+			<button type="submit">Submit</button>
+		</form>
+
+		<input type="text" id="trial" oninput="process()"/>
+
+		<script>
+			function process() {
+				const value = document.getElementById("trial").value;
+				localStorage.setItem("random", value);
+			}
+		</script>
+	</body>
+</html>
