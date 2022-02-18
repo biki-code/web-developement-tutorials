@@ -5,7 +5,7 @@ const port = 5000;
 
 app.get("/", (req, res) => {
 	console.log({ res });
-	res.send("Hello from our Express app");
+	res.send("Hello from Express app");
 });
 
 app.post("/", (req, res) => {
