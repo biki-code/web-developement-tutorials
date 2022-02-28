@@ -20,7 +20,7 @@ const Contents = ({ contents }) => {
 };
 
 const Entry = ({ content }) => {
-  const {name, phone} = content
+	const { name, phone } = content;
 	return (
 		<>
 			<p>
