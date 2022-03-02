@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import Button from "./Components/Button";
 import Statistics from "./Components/Statistics";
+import "./index.css"
 
 const Feedback = () => {
   const [good, setGood] = useState(0);
@@ -48,13 +49,25 @@ const Feedback = () => {
 
       <h2>Statistics</h2>
       {check ? (
-        <p>
-          <Statistics _label={"Good"} _value={good} />
-          <Statistics _label={"Neutral"} _value={neutral} />
-          <Statistics _label={"Bad"} _value={bad} />
-          <Statistics _label={"Average"} _value={avg} />
-          <Statistics _label={"Positive"} _value={`${percentage_positive}%`} />
-        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Review type</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <Statistics _label={"Good"} _value={good} />
+            <Statistics _label={"Neutral"} _value={neutral} />
+            <Statistics _label={"Bad"} _value={bad} />
+            <Statistics _label={"Average"} _value={avg} />
+            <Statistics
+              _label={"Positive"}
+              _value={`${percentage_positive}%`}
+            />
+          </tbody>
+        </table>
       ) : (
         <p>No reviews yet</p>
       )}

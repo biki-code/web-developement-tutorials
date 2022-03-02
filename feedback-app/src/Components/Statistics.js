@@ -2,7 +2,10 @@ import React from 'react'
 
 const Statistics = ({_label, _value}) => {
   return (
-    <div>{`${_label}: ${_value}`}</div>
+    <tr>
+      <td>{_label}</td>
+      <td>{_value}</td>
+    </tr>
   )
 }
 
