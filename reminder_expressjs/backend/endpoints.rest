@@ -1,0 +1,14 @@
+@BASE_URL = http://localhost:3001/api
+
+###
+
+GET {{BASE_URL}}/reminders
+
+###
+
+POST {{BASE_URL}}/reminders 
+content-type: application/json
+
+{
+    "name": "Hello"
+}

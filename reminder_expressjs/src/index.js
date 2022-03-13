@@ -113,8 +113,8 @@ class App extends React.Component {
         </form>
 
         {this.state.reminders.map(({ name, timestamp, id }) => (
-          <div>
-            <span key={id}>{`${timestamp} ${name}`}</span>{" "}
+          <div key={id}>
+            <span>{`${timestamp} ${name}`}</span>{" "}
             <button onClick={() => this.deleteEntry(id)}>Delete</button>
           </div>
         ))}
