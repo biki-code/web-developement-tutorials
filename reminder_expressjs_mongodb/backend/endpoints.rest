@@ -12,3 +12,9 @@ content-type: application/json
 {
     "name": "Hello"
 }
+
+###
+DELETE {{BASE_URL}}/reminders/4
+
+###
+GET {{BASE_URL}}/reminders/3
